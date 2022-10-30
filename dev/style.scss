@@ -23,7 +23,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "sass/page/article";
 @import "sass/page/home"; 
 @import "sass/other/_pagination.scss";
-@import "sass/other/templatePageBlock";
+@import "sass/other/template-styles";
+
+@import "sass/other/functional";
+@import "sass/other/testimonials";
 @import "sass/wp-style";
 @import "sass/footer";
 @import "sass/page/markup";

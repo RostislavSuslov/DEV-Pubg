@@ -18,24 +18,7 @@ jQuery(document).ready(function($) {
             return false
         })
     })
-
-    if ($('.post-item img').length || $('.seo-block img').length) {
-        $('.post-item img, .seo-block img').each(function() {
-            var imgThis = $(this);
-            if (!imgThis.hasClass("nofancy")) {
-                if (imgThis.closest('a')) {
-                    imgThis.closest('a').attr({
-                        'data-fancybox': 'content-group',
-                        //'href': $(this).attr('src'),
-                    });
-                };
-            };
-        });
-    };
-    
-    if($('.post-item iframe').length){
-        $('.post-item iframe').closest('p').addClass('iframe-box')
-    }
+ 
 
        
     var nav = $('.language-title');
@@ -66,4 +49,13 @@ jQuery(document).ready(function($) {
         //alert($lang);
         // alert ("location.href = 'index.php?lang=" + $(this).attr('data-value'));
     });
+
+    $('.slider-testimonials').slick({
+        infinite: true,
+        slidesToShow: 1,
+        // centerMode: true,
+        slidesToScroll: 1
+    });
+    
+
 })
