@@ -1,0 +1,189 @@
+.tariffs {
+    padding: 73px 0 134px;
+    margin-bottom: 400px;
+
+    .section-title {
+        margin-bottom: 74px;
+    }
+
+    .tab-content {
+        padding: 0 46px;
+    }
+
+    .nav-tabs {
+        justify-content: center;
+        margin-bottom: 60px;
+        border: none;
+
+    }
+    
+    .col-lg-4 {
+        padding: 0 16px;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        margin: 0 16px;
+        padding: 16.5px 30px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #AAAAAA;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 25px #00000008;
+        border: none;
+        border-radius: 5px;
+
+        &.active {
+            border-color: #dee2e6 #dee2e6 #fff;
+            background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+            box-shadow: 0px 15px 25px #00a3ff4d;
+            color: #FFFFFF;
+
+            .nav-link__icon {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        &__icon {
+            margin-right: 16px;
+
+        }
+    }
+}
+
+
+.tariff-item {
+    background-color: #fff;
+    border-radius: 5px 55px;
+    max-width: 416px;
+    margin: 0 auto;
+}
+
+.tariff-item__category {
+    box-shadow: 0px 20px 35px #0000000d;
+    border-radius: 5px 55px 0px;
+    padding: 23px 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 36px;
+}
+
+.category--blue {
+    background: linear-gradient(103.24deg, #05FFFF -7.39%, #0AA6FE 85.9%);
+}
+
+.category--purple {
+    background: linear-gradient(89.46deg, #DDA6FF -5.85%, #D828F4 106.28%);
+}
+
+.category--red {
+    background: linear-gradient(98.51deg, #FF9898 14.64%, #FF1F00 102.27%);
+}
+
+
+
+.tariff-item__attr {
+    padding: 0 50px 0 31px;
+    display: grid;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    ul {
+        margin-bottom: 31px;
+
+        li {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+
+            color: #2E3A59;
+
+            margin-bottom: 26px;
+
+            &::before {
+                content: "";
+                border-radius: 0;
+                width: 22px;
+                min-width: 22px;
+                height: 11px;
+                top: 7px;
+                background-color: transparent;
+                border: 3px solid #00D121;
+                border-top: none;
+                border-right: none;
+                transform: rotate(-45deg);
+            }
+
+            &.false {
+                &::before{
+                    border: none;
+                    background-color: #FF3D00;
+                    width: 23px;
+                    min-width: 23px;
+                    height: 3px;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 7px;
+                    left: 19px;
+                    border: none;
+                    background-color: #FF3D00;
+                    width: 23px;
+                    min-width: 23px;
+                    height: 3px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    &-price {
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 55px;
+        text-align: center;
+        color: #2E3A59;
+        margin: 0 auto 18px;
+        position: relative;
+        display: inline-flex;
+
+        &::after {
+            content: "₽";
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 43px;
+            color: #2E3A59;
+            position: absolute;
+            top: -8px;
+            right: -48px;
+        }
+    }
+
+}
+
+.tariff-item__link {
+    background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+    box-shadow: 0px 20px 35px #00000014;
+    border-radius: 0 0 5px 55px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 27px 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+    text-decoration: none;
+}

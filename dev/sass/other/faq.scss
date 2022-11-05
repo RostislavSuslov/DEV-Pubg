@@ -1,0 +1,44 @@
+$accordion-border-radius: 5px;
+
+.faq {
+    margin-bottom: 350px;
+    .accordion-item {
+        margin-bottom: 21px;
+        border: none;
+        box-shadow: 0px 15px 25px #00000008;
+        border-radius: $accordion-border-radius; /*5px*/
+        overflow: hidden;
+    }
+    
+    .accordion-button {
+        padding: 37px 46px 37px 36px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #2E3A59;
+        background-color: #fff;
+        box-shadow: none;
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:after{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23' fill='none'%3E%3Cpath d='M10.1901 0.253278V10.1901L0.253218 10.1901V12.6966L10.1901 12.6966V22.6334L12.6965 22.6334L12.6965 12.6966H22.6334V10.1901H12.6965L12.6965 0.253278L10.1901 0.253278Z' fill='url(%23paint0_linear_2_745)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_2_745' x1='5.22165' y1='5.22171' x2='31' y2='5.5' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%230AA6FE'/%3E%3Cstop offset='1' stop-color='%2305FFFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+        }
+    }
+
+    .accordion-body {
+        position: relative;
+        padding: 6px 67px 38px 58px;
+    }
+    
+    .accordion-body:before {
+        content: "";
+        background: linear-gradient(120.79deg, #0AA6FE 31.33%, #05FFFF 101.79%);
+        position: absolute;
+        width: 2px;
+        height: calc(100% - 38px);
+        top: 0;
+        left: 37px;
+    }
+}
